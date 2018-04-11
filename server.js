@@ -39,11 +39,11 @@ app.delete('/todos/:slug', function (request, response) {
 
 app.put('/todos/:slug', function (request, response) {
   var todo = todos[request.params.slug]
-  if (request.body.detail !== undefined) {
+  if (request.body.detail) {
     todo.detail = request.body.detail.trim()
   }
-  if (request.body.done !== undefined) {
-    todo.done = '$' + parseFloat(request.body.done).toFixed(2)
+  if (request.body.done) {
+    todo.done = parseFloat(request.body.done).toFixed(2)
   }
   response.redirect('/todos/' + request.params.slug)
 })

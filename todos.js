@@ -1,13 +1,13 @@
 module.exports = {
-  'Import Photo': {
+  'import-photo': {
     detail: 'Add photo to lightroom',
     done: 'yes'
   },
-  'Edit Photo': {
+  'edit-photo': {
     detail: 'Edit photo in lightroom',
     done: 'yes'
   },
-  'Export Photo': {
+  'export-photo': {
     detail: 'Save and share photo from lightroom',
     done: 'yes'
   }

@@ -40,10 +40,10 @@ app.delete('/todos/:slug', function (request, response) {
 app.put('/todos/:slug', function (request, response) {
   var todo = todos[request.params.slug]
   if (request.body.detail !== undefined) {
-    todo.name = request.body.detail.trim()
+    todo.detail = request.body.detail.trim()
   }
   if (request.body.done !== undefined) {
-    todo.price = '$' + parseFloat(request.body.done).toFixed(2)
+    todo.done = '$' + parseFloat(request.body.done).toFixed(2)
   }
   response.redirect('/todos/' + request.params.slug)
 })

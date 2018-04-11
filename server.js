@@ -43,7 +43,7 @@ app.put('/todos/:slug', function (request, response) {
     todo.detail = request.body.detail.trim()
   }
   if (request.body.done) {
-    todo.done = parseFloat(request.body.done).toFixed(2)
+    todo.done = request.body.done.trim()
   }
   response.redirect('/todos/' + request.params.slug)
 })

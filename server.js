@@ -16,7 +16,7 @@ app.get('/todos', function (request, response) {
 })
 
 app.post('/todos', function (request, response) {
-  var slug = request.body.name.trim().toLowerCase().split(' ').join('-')
+  var slug = request.body.detail.trim().toLowerCase().split(' ').join('-')
   todos[slug] = {
     detail: request.body.detail.trim(),
     done: request.body.done.trim()

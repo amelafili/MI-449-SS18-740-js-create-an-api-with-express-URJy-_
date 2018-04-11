@@ -1,14 +1,14 @@
 module.exports = {
   'Import Photo': {
-    detail: 'Wash the dishes',
+    detail: 'Add photo to lightroom',
     done: 'yes'
   },
   'Edit Photo': {
-    detail: 'Vacuum the carpet',
+    detail: 'Edit photo in lightroom',
     done: 'yes'
   },
   'Export Photo': {
-    detail: 'Fold clothes',
+    detail: 'Save and share photo from lightroom',
     done: 'yes'
   }
 }
